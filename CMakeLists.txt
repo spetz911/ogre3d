@@ -6,13 +6,6 @@ project(untitled)
 add_subdirectory(GL3Plus)
 add_subdirectory(OgreMain)
 
-#set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
-
-###################################################################
-# configure global build settings based on selected build options
-###################################################################
-#include(ConfigureBuild.cmake)
-
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/OgreMain/include)
 
@@ -49,7 +42,8 @@ include_directories(/opt/local/include)
 
 FIND_LIBRARY(GLFW_LIBRARY GLFW)
 
-add_executable(main main.cpp)
+add_executable(main main.cpp tutorial08/common/shader.cpp)
+
 target_link_libraries(main ${OPENGL_LIBRARY} ${GLFW_LIBRARY})
 
 
