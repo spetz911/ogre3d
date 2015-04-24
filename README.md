@@ -3,7 +3,16 @@
 
 + All libs are static
 + Compiles fast
-+ FIXME It crash on OpenGL context yet
++ FIXME It crashes on OpenGL context creation yet
+
+### AUTHORS
+
+OGRE was originally created by Steve Streeting (sinbad),
+but many other developers have contributed to the project over the years.
+
+The full list of contributors are huge,
+look at [source repository](https://bitbucket.org/sinbad/ogre/src).
+
 
 ### log:
 
